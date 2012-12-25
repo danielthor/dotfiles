@@ -1,4 +1,6 @@
-# Ryan Bates Dot Files
+# Daniel Thor Dot Files
+
+Based upon the awesome work of @ryanb https://github.com/ryanb/dotfiles 
 
 These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
 
@@ -22,7 +24,7 @@ Feel free to customize the .zshrc file to match your preference.
 
 ## Features
 
-Many of the following features are added through the "rbates" Oh My ZSH plugin.
+Many of the following features are added through the "daniel" Oh My ZSH plugin.
 
 I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
 
