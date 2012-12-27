@@ -1,5 +1,5 @@
-c() { cd ~/code/$1; }
-_c() { _files -W ~/code -/; }
+c() { cd ~/Code/projects/$1; }
+_c() { _files -W ~/Code/projects -/; }
 compdef _c c
 
 h() { cd ~/$1; }
