@@ -6,6 +6,9 @@ h() { cd ~/$1; }
 _h() { _files -W ~/ -/; }
 compdef _h h
 
+# lists recent directories - optional -<n> parameter
+lr() { ls -1t | head "$@"; }
+
 function git_prompt_base_dir {
   git_dir=`git rev-parse --show-toplevel 2> /dev/null`
   if [ -n "$git_dir" ]; then
