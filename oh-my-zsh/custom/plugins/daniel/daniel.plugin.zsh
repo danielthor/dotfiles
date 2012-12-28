@@ -26,6 +26,12 @@ function git_prompt_sub_dir {
   fi
 }
 
+function ssh_prompt_info {
+  if [[ -n "$SSH_CLIENT" ]]; then
+    echo $ZSH_THEME_SSH_PROMPT_INFO
+  fi
+}
+
 export EDITOR='vim'
 
 # autocorrect is more annoying than helpful
