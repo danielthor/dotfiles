@@ -17,8 +17,11 @@ task :install do
       elsif replace_all
         replace_file(file)
       else
-        print "overwrite ~/.#{file.sub(/\.erb$/, '')}? [ynaq] "
+        print "overwrite ~/.#{file.sub(/\.erb$/, '')}? [ynabq] "
         case $stdin.gets.chomp
+        when 'b'
+          backup_file(file)
+          replace_file(file)
         when 'a'
           replace_all = true
           replace_file(file)
@@ -39,6 +42,11 @@ end
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file.sub(/\.erb$/, '')}"}
   link_file(file)
+end
+
+def backup_file(file)
+  puts "backup ~/.#{file.sub(/\.erb$/, '')} -> ~/.#{file.sub(/\.erb$/, '')}.backup"
+  system %Q{mv "$HOME/.#{file.sub(/\.erb$/, '')}" "$HOME/.#{file.sub(/\.erb$/, '')}.backup"}
 end
 
 def link_file(file)
