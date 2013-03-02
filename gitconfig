@@ -9,6 +9,7 @@
   wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
   unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
   s = status --short
+  d = diff
   dc = diff --cached
 [color]
   diff = auto
