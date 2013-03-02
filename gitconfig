@@ -1,0 +1,28 @@
+[user]
+  name = Daniel Thor
+  email = daniel.thor@gmail.com
+  signingkey = 6F356C2A
+[alias]
+  co = checkout
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  fix = commit --amend -C HEAD
+  wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
+  unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+  s = status --short
+  dc = diff --cached
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+  editor = vim
+  autocrlf = input
+[apply]
+  whitespace = nowarn
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+[github]
+  user = danielthor
+[git-up "bundler"]
+  check = true
