@@ -2,18 +2,21 @@
 
 Based upon the awesome work of @ryanb https://github.com/ryanb/dotfiles 
 
-These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
+These are config files to set up a system the way I like it. It uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh).
 
 I am running on Mac OS X, but it will likely work on Linux as well.
 
 
 ## Installation
 
-Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/ryanb/dotfiles/blob/custom-bash-zsh/Rakefile) to see exactly what it does.
+Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/danielthor/dotfiles-zsh/blob/master/Rakefile) to see exactly what it does.
+
+You probably want to change gitconfig to match your settings.
 
 ```terminal
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+git clone git://github.com/danielthor/dotfiles-zsh ~/.dotfiles
 cd ~/.dotfiles
+vim gitconfig
 rake install
 ```
 
@@ -26,7 +29,7 @@ Feel free to customize the .zshrc file to match your preference.
 
 Many of the following features are added through the "daniel" Oh My ZSH plugin.
 
-I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
+I normally place all of my coding projects in ~/Code/projects, so this directory can easily be accessed (and tab completed) with the "c" command.
 
 ```terminal
 c railsca<tab>
@@ -58,6 +61,7 @@ To remove the dotfile configs, run the following commands. Be certain to double 
 
 ```
 unlink ~/.bin
+unlink ~/.gitconfig
 unlink ~/.gitignore
 unlink ~/.gemrc
 unlink ~/.gvimrc
@@ -65,10 +69,10 @@ unlink ~/.irbrc
 unlink ~/.vim
 unlink ~/.vimrc
 rm ~/.zshrc # careful here
-rm ~/.gitconfig
 rm -rf ~/.dotfiles
 rm -rf ~/.oh-my-zsh
 chsh -s /bin/bash # change back to Bash if you want
 ```
 
 Then open a new terminal window to see the effects.
+pen a new terminal window to see the effects.
