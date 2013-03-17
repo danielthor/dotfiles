@@ -45,6 +45,7 @@ unsetopt correct_all
 
 # a few aliases I like
 alias ll='ls -1Gh'
+alias g='git'
 
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"
