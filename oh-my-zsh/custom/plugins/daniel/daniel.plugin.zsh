@@ -47,5 +47,8 @@ unsetopt correct_all
 alias ll='ls -1Gh'
 alias g='git'
 
+# set umask
+umask 022
+
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"
