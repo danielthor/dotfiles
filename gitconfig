@@ -11,6 +11,8 @@
   s = status --short
   d = diff
   dc = diff --cached
+  edit-config = !"$EDITOR ~/.gitconfig"
+  edit-config-local = !"$EDITOR .git/config"
 [color]
   diff = auto
   status = auto
