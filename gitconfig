@@ -13,6 +13,7 @@
   dc = diff --cached
   edit-config = !"$EDITOR ~/.gitconfig"
   edit-config-local = !"$EDITOR .git/config"
+  topic = checkout -b
 [color]
   diff = auto
   status = auto
