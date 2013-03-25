@@ -5,4 +5,4 @@ ZSH_THEME_GIT_PROMPT_EXTENDED_PWD="%3~"
 ZSH_THEME_SSH_PROMPT_INFO="[%{$fg[yellow]%}%m%{$reset_color%}]"
 
 PROMPT='%{$fg[blue]%}$(git_prompt_base_dir)%{$reset_color%}$(git_prompt_info)%{$fg[green]%}$(git_prompt_sub_dir)%{$reset_color%}%# '
-RPROMPT="$(ssh_prompt_info)"
+#RPROMPT="$(ssh_prompt_info)"
