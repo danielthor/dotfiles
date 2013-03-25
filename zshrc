@@ -5,7 +5,7 @@ DISABLE_LS_COLORS="true"
 
 plugins=(extract git bundler brew gem daniel)
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/usr/local/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
