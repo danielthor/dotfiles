@@ -50,5 +50,9 @@ alias g='git'
 # set umask
 umask 022
 
+# source z
+. ~/.oh-my-zsh/custom/plugins/daniel/bin/z/z.sh
+
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"
+
