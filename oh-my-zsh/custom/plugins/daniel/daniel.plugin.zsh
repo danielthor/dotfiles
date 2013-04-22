@@ -47,6 +47,9 @@ unsetopt correct_all
 alias ll='ls -1Gh'
 alias g='git'
 
+# weather alias
+alias w='~/.oh-my-zsh/custom/plugins/daniel/bin/weather.rb'
+
 # set umask
 umask 022
 
