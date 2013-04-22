@@ -7,6 +7,10 @@ plugins=(extract git bundler brew gem daniel)
 
 export PATH="$HOME/.rbenv/bin:/usr/local/bin:$PATH"
 
+# ruby garbage collection tweaks
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000
+
 source $ZSH/oh-my-zsh.sh
 
 # for Homebrew installed rbenv
