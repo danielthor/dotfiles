@@ -16,6 +16,7 @@
   edit-config-local = !"$EDITOR .git/config"
   topic = checkout -b
   t = !"git topic"
+  a = add
 [color]
   diff = auto
   status = auto
