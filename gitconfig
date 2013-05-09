@@ -17,6 +17,7 @@
   topic = checkout -b
   t = !"git topic"
   a = add
+  unstage = reset HEAD
 [color]
   diff = auto
   status = auto
