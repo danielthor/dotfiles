@@ -1,7 +1,6 @@
 [user]
   name = Daniel Thor
-  email = daniel.thor@gmail.com
-  signingkey = 6F356C2A
+  email = daniel.thor@tretti.se
 [alias]
   co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
